@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment4</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="file.js"></script>
+</head>
+
+<body>
+
+
+    <form onsubmit="submitForm(event)" ;>
+        <label for="FullName">Full name</label>
+        <input type="text" id="FullName" size="40" autofocus placeholder="FirstName LastName" required>
+        <br>
+        <label for="password1">Password</label>
+        <input type="password" id="password1" minlength="8" maxlength="20 required"
+            title="Password must be 8-20 characters, password can contain a-z or A-Z letters and numbers 0-9 and characters _,.-:;?!"
+            pattern="^[\w,.\-:;?!]{8,20}$" required autocomplete="new-password">
+        <br>
+        <label for="password2">password, again</label>
+        <input type="password" id="password2" minlength="8" maxlength="20 required"
+            title="Password must be 8-20 characters, password can contain a-z or A-Z letters and numbers 0-9 and characters _,.-:;?!"
+            pattern="^[\w,.\-:;?!]{8,20}$" required autocomplete="new-password">
+        <br>
+        <fieldset >
+            <label for="id_male">Gender</label>
+            <input required type="radio" name="gender" value="male" id="id_male">male
+            <input type="radio" name="gender" value="female" id="id_female">female
+            <input type="radio" name="gender" value="other" id="id_other">other
+        </fieldset>
+        <br>
+        <label for="id_sports">Hobbies</label>
+        <input type="checkbox" name="hobbie" value="sports" id="id_sports">sports
+        <input type="checkbox" name="hobbie" value="tv" id="id_tv">TV
+        <input type="checkbox" name="hobbie" value="movies" id="id_movies">Movies
+        <input type="checkbox" name="hobbie" value="music" id="id_music">music
+        <br>
+
+        <label for="BirthDate">Birth Date</label>
+        <input type="date" id="BirthDate">
+        <br>
+
+        <label for="amountRange">Height</label>
+        <input type="range" id="amountRange" min="40" max="300" value=""
+            oninput="this.form.amountInput.value=this.value" />
+        <input type="number" id="amountInput" min="40" max="300" value="" 
+            oninput="this.form.amountRange.value=this.value" />
+        <br>
+
+        <label for="color">Favorite color</label>
+        <input type="color" id="color">
+        <br>
+
+        <label for="country">Country:</label>
+        <select name="country" id="id_country">
+            <option value="fi" selected>Finland</option>
+            <option value="ru">Russian</option>
+            <optgroup label="Scandinavia">
+                <option value="de">Denmark</option>
+                <option value="no">Norway</option>
+                <option value="sv">Sweden</option>
+            </optgroup>
+            <optgroup label="Baltic">
+                <option value="es">Estonia</option>
+                <option value="lv">Latvia</option>
+                <option value="lt">Lithuania</option>
+            </optgroup>
+        </select>
+        <br>
+
+        <label for="profession">Profession</label>
+        <input list="profession" id="myProfession">
+        <datalist id="profession">
+            <option value="Teacher">
+            <option value="Student">
+            <option value="Nurse">
+            <option value="Plumber">
+        </datalist>
+        <br>
+
+        <label for="message" >Message:</label>
+        <textarea name="" id="id_message" columns="60" rows="6" maxlength="1000"
+            placeholder="Write your message here, max 1000char" required ></textarea>
+        <input type="submit" value="Submit">
+
+        <h3>Results:</h3>
+        <output id="id_result"></output>
+    </form>
+
+</body>
+
+</html>

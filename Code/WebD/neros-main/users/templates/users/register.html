@@ -1,0 +1,35 @@
+<!-- Inherits base.html first, then overrides it with stuff written under it-->
+{% extends 'users/base.html' %} 
+{% block contentbar %}
+
+
+<div class="vh-100">
+  <div class="row d-flex justify-content-center align-items-center h-100">
+    <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+      <div class="card bg-dark text-white" style="border-radius: 1rem;">
+        <div class="card-body p-5 text-center">
+
+          <div class="mb-md-5 mt-md-4 pb-5">
+              <h3>Register here</h3><br>
+              
+              <form action="" method="POST">
+                {% csrf_token %} {% for field in form %}
+                <div>
+                  <p>
+                    {{ field.label }}: <br />
+                    {{ field }}
+                  </p>
+
+                  {% for error in field.errors %}
+                  <small style="color: red">{{ error }}</small>
+                  {% endfor %}
+                </div>
+                {% endfor %}
+                <button type="submit" class="btn btn-outline-warning">Register</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

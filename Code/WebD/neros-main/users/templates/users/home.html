@@ -1,0 +1,57 @@
+<!-- Inherits base.html first, then overrides it with stuff written under it-->
+{% extends 'users/base.html' %}
+{% block contentbar %}
+
+
+{% if user.is_authenticated %}
+<div class="alert alert-dark" role="alert">
+  <h3 style="padding:5px;">Welcome {{ user.username }}!</h3>
+  <ul class="nav flex-row">
+
+    <li class="nav-item" style="padding: 5px;">
+      <a class="btn btn-outline-dark btn-block" href="{% url 'image_upload' %}"> Add post</a>
+    </li>
+    <li class="nav-item" style="padding: 5px;">
+      <a class="btn btn-outline-dark btn-block" href="{% url 'picture_images' %}"> Show images</a>
+    </li>
+    <li class="nav-item" style="padding: 5px;">
+      <a class="btn btn-outline-dark btn-block" href="{% url 'edit_details' %}"> Your profile</a>
+    </li>
+    <li class="nav-item" style="padding: 5px;">
+      <a class="btn btn-outline-dark btn-block" href="{% url 'settings' %}"> Settings</a>
+    </li>
+    <li class="nav-item" style="padding: 5px;">
+      <a class="btn btn-outline-dark btn-block" href="{% url 'logout' %}"> Logout?</a>
+    </li>
+  </ul>
+
+</div>
+<div class="container">
+  <div class="row">
+    {% for picture in 'picture_images' %}
+      {{ picture.name }}
+      <a href="{{ picture.picture_thumbnail.url }}" data-toggle="lightbox" data-gallery="gallery" class="col-sm-4">
+        <img src="{{ picture.picture_thumbnail.url }}" class="img-fluid"/>
+      </a>
+    {% endfor %}
+    
+  </div>
+</div>
+
+
+{% else %}
+<div class="alert alert-dark" role="alert">
+  <h3 style="padding:5px;" class="d-flex justify-content-center">Welcome!</h3>
+  <ul class="nav flex-row d-flex justify-content-center">
+  <li class="nav-item" style="padding: 5px;">
+    <a href="{% url 'register' %}" class="btn btn-outline-dark btn-block" >Signup</a>
+  </li>
+  <br />
+  <li class="nav-item" style="padding: 5px;">
+    <a href="{% url 'login' %}" class="btn btn-outline-dark btn-block" >Login</a>
+  </li>
+  </ul>
+</div>
+{% endif %}
+
+{% endblock %}

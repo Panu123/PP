@@ -1,0 +1,22 @@
+[
+    {
+        "question": "Who lives in a swap",
+        "choices": ["Batman", "T-rex", "Shrek", "Superman"],
+        "correctAnswer": 2
+    },
+    {
+        "question": "Where is Helsinki located?",
+        "choices": ["Finland", "Sweden", "Norway", "Europe"],
+        "correctAnswer": 0
+    },
+    {
+        "question": "What is What?",
+        "choices": ["Wat", "Wah", "What", "Petrolium"],
+        "correctAnswer": 2
+    },
+    {
+        "question": "Last one?",
+        "choices": ["last", "one", "two", "Last one"],
+        "correctAnswer": 3
+    }
+]

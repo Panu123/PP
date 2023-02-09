@@ -1,0 +1,9 @@
+<!-- Inherits base.html first, then overrides it with stuff written under it-->
+{% extends 'users/base.html' %} 
+
+{% block contentbar %}
+<div class="alert alert-dark">
+    <p>You are logged out!</p>
+    <a  href="{% url 'login' %}" class="btn btn-outline-dark">Log in again</a>
+</div>
+{% endblock %}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>plotter</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="handler.js"></script>
+</head>
+
+<body>
+    <div class="container" id="user_input" onsubmit="handle(event)">
+        <form>
+            <h3 id="error_message"></h3>
+            <label for="id_function">Function: </label>
+            <input type="text" id="id_function" name="function"><br><br>
+
+            <label for="id_startofx">Start of X: </label>
+            <input type="text" id="id_startfx" name="sofx"><br><br>
+
+            <label for="id_enofx">End of X: </label>
+            <input type="text" id="id_endfx" name="efx"><br><br>
+
+            <label for="id_stepofx">Step of X: </label>
+            <input type="text" id="id_stepfx" name="stofx"><br><br>
+
+            <input type="submit" name="sbmt" id="sbmt">
+
+        </form>
+    </div>
+
+    <div class="container2" style="position: relative; height:40vh; width:80vw">
+        <canvas id="fonny"></canvas>
+    </div>
+    
+</body>
+
+</html>
