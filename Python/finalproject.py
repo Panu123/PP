@@ -1,6 +1,6 @@
 """Kafka practice work where search tweets and use this code to consume them and safe to the mongodb database"""
 """Also this code uses textblob to determine is it positive neutral or negative tweet"""
-
+"""not sure if this code works anymore after twitter api changes"""
 
 import tweepy
 import time
