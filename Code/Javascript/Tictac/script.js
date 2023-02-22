@@ -44,4 +44,4 @@ function checkForWinner() {
     }
 }
 
-//add new game button and score board
+//add new game button and score board, also make more dynamic
