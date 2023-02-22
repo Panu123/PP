@@ -1,1 +1,1 @@
-# school work/projects and also own project outside of school. 
+# school work/projects and also own projects outside of school. 
