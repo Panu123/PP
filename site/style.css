@@ -6,14 +6,14 @@ html {
 }
 
 body {
-    background-color: lightgray;
+    background-color: white;
 }
 
 .parallax {
     background-image: url('Electrical-installation-915075-scaledd.jpg');
 
     /* Set a specific height */
-    min-height: 35vh;
+    min-height: 30px;
     filter: blur(3px);
     -webkit-filter: blur(3px);
     /* Create the parallax scrolling effect */
@@ -23,11 +23,6 @@ body {
     background-size: cover;
 }
 
-@media only screen and (max-device-width: 1366px) {
-    .parallax {
-        background-attachment: scroll;
-    }
-}
 
 .bg-image {
     /* The image used */
@@ -49,50 +44,84 @@ body {
 }
 
 .container1 {
-    max-width: 80%;
+    width: 70%;
     max-height: 10%;
     margin: auto;
-    top: 10%;
+    border-bottom: 2px;
+    border-color: blue;
+    border-style: solid;
+    padding-bottom: 2px;
 
 }
 
 .container2 {
 
-    max-width: 80%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 2%;
-    grid-row-gap: 2%;
+    width: 70%;
     margin: 2% auto;
+    margin: auto;
+    height: 40%;
+    padding-bottom: 10px;
+}
+
+.työkuva1 {
+    position: relative;
+    float: left;
+    margin: auto;
+    width: 50%;
+    height: 510px;
+    padding-top: 2%;
+    padding-bottom: 3%;
 }
 
 .grid1 {
     background: white;
     font: inherit;
     position: relative;
-    padding: 10%;
-    border-style: solid;
-    border-color: black;
-    border: 4%;
+    float: left;
+    margin: auto;
+    padding: 3%;
+    width: 50%;
+    height: 510px;
+    padding: 3%;
+    border-top: 5px solid blue;
 }
 
 .grid2 {
     background: white;
     font: inherit;
     position: relative;
-    padding: 10%;
-    border-style: solid;
-    border-color: black;
-    border: 4%;
-
+    float: right;
+    margin: auto;
+    width: 50%;
+    height: 510px;
+    padding: 3%
 }
 
+
+
 .container3 {
-    width: 80%;
-    height: 500vh;
-    background-color: red;
+    width: 70%;
+    height: 30%;
     position: relative;
     margin: auto;
+}
 
+
+@media only screen and (max-width: 800px) {
+
+    .container1,
+    .container2,
+    .container3,
+    .container4,
+    .grid1,
+    .grid2 {
+        width: 100%;
+        /* The width is 100%, when the viewport is 800px or smaller */
+    }
+}
+
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+        background-attachment: scroll;
+    }
 }
