@@ -1,16 +1,20 @@
 html {
     height: 100%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: medium;
+
+
 
 }
 
+body {
+    background-color: #1d1b1bbe;
+}
 
 
 .parallax {
-    background-image: url('Electrical-installation-915075-scaledd.jpg');
+    background-image: url('media/Electrical-installation-915075-scaledd.jpg');
 
-    min-height: 15vh;
+    min-height: 18vh;
 
     filter: blur(3px);
     -webkit-filter: blur(3px);
@@ -28,7 +32,7 @@ html {
 
 .container1 {
 
-    width: 100%;
+    width: 85%;
     max-height: 10%;
     margin: auto;
 
@@ -40,8 +44,9 @@ html {
     position: relative;
     display: grid;
     grid-template-columns: repeat(2, 2fr);
-    width: 100%;
-
+    width: 85%;
+    left: 7.5%;
+    right: 7.5%;
 }
 
 
@@ -50,7 +55,7 @@ html {
     background: white;
     font: inherit;
     position: relative;
-    padding: 5%;
+    padding: 2%;
 
 
     border-right: 3px solid #17a2b8;
@@ -83,7 +88,7 @@ html {
 }
 
 .container3 {
-    width: 100%;
+    width: 85%;
     display: grid;
     position: relative;
     grid-template-columns: repeat(3, 1fr);
@@ -93,7 +98,11 @@ html {
     background-color: #17a2b8;
 }
 
-
+.container4 {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
 
 
 @media only screen and (max-width: 800px) {

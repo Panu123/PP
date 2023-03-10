@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -29,7 +30,7 @@
     <div class="container1">
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <img src="logo.svg" width="80" height="80" alt="">
+            <img src="media/logo.svg" width="80" height="80" alt="">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -38,7 +39,8 @@
                 <div class="navbar-nav">
                     <a class="nav-item nav-link active" href="index.html">Koti <span
                             class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="asennukset.html">Asennukset</a>
+
+                    <a class="nav-item nav-link" href="#asennukset">Asennukset</a>
                     <a class="nav-item nav-link" href="yhteistiedot.html">Yhteistiedot</a>
 
                 </div>
@@ -57,7 +59,7 @@
             <p>El-Well Oy tarjoaa asiakkailleen, yrityksille ja yksityisille, laajat sähköasennuspalvelut sekä
                 mekaaniset kokoonpanot. Tarjoamme myös tuotteet ja tarvikkeet asennuspalveluidemme tueksi, kohteesta
                 riippumatta.
-                <br>
+
                 <br>
                 Yrityksemme tärkein ohjenuora on laatu. Kun tehdään, tehdään kunnolla. Asiakkaanamme voit luottaa
                 siihen, että asennukset on tehty oikein, turvallisesti ja määräyksiä noudattaen.
@@ -68,11 +70,11 @@
             </p>
         </div>
         <div class="grid2">
-            <img src="Engineer-in-a-server-room-1076176-scaledd.jpg" class="img1" alt="">
+            <img src="media/Engineer-in-a-server-room-1076176-scaledd.jpg" class="img1" alt="">
         </div>
 
         <div class="grid3">
-            <img src="Engineer-in-a-server-room-1076176-scaledd.jpg" class="img1" alt="">
+            <img src="media/Engineer-in-a-server-room-1076176-scaledd.jpg" class="img1" alt="">
         </div>
 
         <div class="grid4">
@@ -90,9 +92,9 @@
     </div>
     <div class="parallax"></div>
 
-    <div class="container3">
+    <div class="container3" id="asennukset">
         <div class="card" style="background-color:white;">
-            <img class="card-img-top" src="Electrician-at-work-801547-scaledd.jpg" alt="">
+            <img class="card-img-top" src="media/Electrician-at-work-801547-scaledd.jpg" alt="">
             <div class="card-body">
                 <h4 class="card-title">Kiinteistösähkö – Asennukset ja tarvikkeet</h4>
                 <p class="card-text">Teemme kiinteistöjen sähköistyksiä kokeneiden asentajiemme kanssa. Oli kyseessä
@@ -112,7 +114,7 @@
         </div>
 
         <div class="card2" style="background-color:white;">
-            <img class="card-img-top" src="solar-panel-ge2c6cc074_1280.png" alt="" style="aspect-ratio: 3/2;">
+            <img class="card-img-top" src="media/solar-panel-ge2c6cc074_1280.png" alt="" style="aspect-ratio: 3/2;">
             <div class="card-body">
                 <h4 class="card-title">Aurinkopaneelit ja asennukset</h4>
                 <p class="card-text">El-Well tarjoaa kattavat aurinkosähköratkaisut. Tarvitset sitten asennusta tai
@@ -127,7 +129,7 @@
 
         </div>
         <div class="card2" style="background-color:white;">
-            <img class="card-img-top" src="Engineer-in-a-server-room-1076176-scaledd.jpg" alt="">
+            <img class="card-img-top" src="media/Engineer-in-a-server-room-1076176-scaledd.jpg" alt="">
             <div class="card-body">
                 <h4 class="card-title">Mekaniikkakokoonpano ja muut asennukset</h4>
                 <p class="card-text">Tarvitsetko kumppanin kasaamaan mekaniikkaratkaisun toimitusta tai seuraavaa
@@ -140,16 +142,151 @@
                     sähköasennukset ja muutokset, esimerkiksi valaisimien tai pistorasioiden siirrot ja kaappien
                     sähköistykset.
                 </p>
+                <br>
             </div>
 
         </div>
     </div>
 
-    <div class="parallax"></div>
-    <div class="container4">
 
+    <div class="parallax"></div>
+
+    <div class="container4">
+        <div class="grid2-1">
+            <h1>Yhteystiedot:</h1>
+            <br>
+            <p>El-Well Oy
+                <br>
+                Y-tunnus: 1234567-8
+                <br>
+                Puhelinnumero: 040 123 4567
+                <br>
+                sähköposti:
+                <br>
+                Osoite: Kaartokatu 2, 11000 Riihimäki
+                <br>
+            </p>
+
+        </div>
+        <div class="grid2-2">
+            <h2>Yhteydenotto lomake</h2>
+            <form action="/action_page.php">
+                <label for="fname">Nimi</label>
+                <br>
+                <input type="text" id="fname" name="nimi" placeholder="Your name..">
+                <br>
+                <label for="Puhelin">Puhelin</label>
+                <br>
+                <input type="text" id="lname" name="Puhelin" placeholder="Puhelinnumero">
+                <br>
+
+                <label for="subject">Teksti</label>
+                <br>
+                <textarea id="subject" name="subject" placeholder="Write something.."
+                    style="height: 250px;; width: 450px; resize: none;"></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+
+        </div>
     </div>
 
+
+    <div class="container-fluid">
+
+        <footer class="text-white text-center text-lg-start" style="background-color: #23242a;">
+
+            <div class="container p-4">
+
+                <div class="row mt-4">
+
+                    <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-4">Meistä</h5>
+
+                        <p>El-Well Oy tarjoaa asiakkailleen, yrityksille ja yksityisille, laajat
+                            sähköasennuspalvelut sekä
+                            mekaaniset kokoonpanot. Tarjoamme myös tuotteet ja tarvikkeet asennuspalveluidemme tueksi,
+                            kohteesta riippumatta.
+
+                        </p>
+                        <div class="mt-4">
+
+                            <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fa fa-facebook-f"
+                                    href="" alt="Facebook"></i></a>
+
+                            <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fa fa-linkedin"
+                                    href="" alt="Linkedin"></i></a>
+
+                            <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fa fa-twitter"
+                                    href="" alt="Twitter"></i></a>
+
+                            <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fa fa-instagram"
+                                    href="" alt="Instagram"></i></a>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-4 pb-1">Yhteistiedot</h5>
+
+
+
+                        <ul class="fa-ul" style="margin-left: 1.65em;">
+                            <li class="mb-3">
+                                <span class="fa-li"><i class="fa fa-lock"></i></span><span class="ms-2">Y-tunnus
+                                    1234567-8</span>
+                            </li>
+                            <li class="mb-3">
+                                <span class="fa-li"><i class="fa fa-phone"></i></span><span class="ms-2">+358 401
+                                    234 567</span>
+                            </li>
+                            <li class="mb-3">
+                                <span class="fa-li"><i class="fa fa-envelope"></i></span><span
+                                    class="ms-2">meikä@meikä.com</span>
+                            </li>
+                            <li class="mb-3">
+                                <span class="fa-li"><i class="fa fa-home"></i></span><span class="ms-2">Kaartokatu 2,
+                                    11000 Riihimäki</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-4">Avoinna</h5>
+
+                        <table class="table text-center text-white">
+                            <tbody class="font-weight-normal">
+                                <tr>
+                                    <td>Maanantai - perjantai</td>
+                                    <td>8.00 - 18.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Lauantai:</td>
+                                    <td>9.00-15.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Sunnuntai:</td>
+                                    <td>Suljettu</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                By
+            </div>
+
+        </footer>
+
+    </div>
 </body>
 
 </html>
